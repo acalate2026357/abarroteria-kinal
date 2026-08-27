@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.kafusoft.abarroteria.kinal.controller.LoginController">
+   <children>
+      <GridPane layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.20001220703125" minWidth="10.0" prefWidth="65.6000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.8000122070312" minWidth="10.0" prefWidth="447.1999755859376" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.59997558593744" minWidth="6.79998779296875" prefWidth="70.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="txtFieldEmail" layoutX="79.0" layoutY="223.0" prefHeight="25.0" prefWidth="317.0" />
+                  <Label layoutX="79.0" layoutY="192.0" prefHeight="17.0" prefWidth="127.0" text="Correo electrónico" />
+                  <Label layoutX="79.0" layoutY="254.0" prefHeight="17.0" prefWidth="104.0" text="Contraseña" />
+                  <PasswordField fx:id="txtFieldPassword" layoutX="79.0" layoutY="285.0" prefHeight="25.0" prefWidth="317.0" />
+                  <Button fx:id="btnIniciarSesion" alignment="CENTER" layoutX="85.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="42.0" prefWidth="115.0" stylesheets="@../css/button-style.css" text="Iniciar Sesión">
+                     <styleClass>
+                        <String fx:value="btn-primary" />
+                        <String fx:value="btn-word" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="272.0" layoutY="341.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="115.0" stylesheets="@../css/button-style.css" text="Registrarse">
+                     <styleClass>
+                        <String fx:value="btn-secundary" />
+                        <String fx:value="btn-word" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="185.0" fitWidth="168.0" layoutX="154.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/usuario.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

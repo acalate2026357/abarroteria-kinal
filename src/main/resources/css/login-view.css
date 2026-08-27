@@ -1,0 +1,9 @@
+    .mainFxmlClass {
+    -fx-background-color:chocolate
+    }
+
+    .nombre-clase{
+
+        -fx-fontStyle: Times New Roman;
+
+    }
