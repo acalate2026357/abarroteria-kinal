@@ -49,6 +49,8 @@ public class SceneManager {
     }
     
     
+    
+    
     public void showAlertInfo(String head, String title, String content, AlertType type){
         Alert alert = new Alert(type);
         alert.initOwner(this.stage);
