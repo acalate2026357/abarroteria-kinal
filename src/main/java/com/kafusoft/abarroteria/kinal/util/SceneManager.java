@@ -47,6 +47,11 @@ public class SceneManager {
         stage.show();
         
     }
+
+    
+    
+    
+    
     
     
     
